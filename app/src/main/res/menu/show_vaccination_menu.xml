@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".showVaccinations">
+    <item android:id="@+id/action_vaccinationHistory" android:title="Vaccination History"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/log_out" android:title="Logout"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@id/sendText" app:showAsAction="never" android:title="Send Emergency Text" android:orderInCategory="100" />
+</menu>

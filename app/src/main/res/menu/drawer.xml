@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/add_parent"
+            android:checked="false"
+            android:icon="@drawable/ic_inbox_black"
+            android:title="Add Parent"
+            />
+
+        <item
+            android:id="@+id/vaccinate"
+            android:checked="false"
+            android:icon="@drawable/ic_star_black"
+            android:title="Vaccinate Child" />
+
+        <item
+            android:id="@+id/vacc_schedule"
+            android:checked="false"
+            android:icon="@drawable/ic_send_black"
+            android:title="Vaccination Schedule" />
+
+        <item
+            android:id="@+id/showCalender"
+            android:checked="false"
+            android:icon="@drawable/ic_drafts_black"
+            android:title="Calender" />
+
+
+        <item
+            android:id="@+id/ChildNFC"
+            android:checked="false"
+            android:icon="@drawable/ic_email_black"
+            android:title="Child's RFID" />
+        <item
+            android:id="@+id/trash"
+            android:checked="false"
+            android:icon="@drawable/ic_delete_black"
+            android:title="@string/trash_string" />
+        <item
+            android:id="@+id/spam"
+            android:checked="false"
+            android:icon="@drawable/ic_error_black"
+            android:title="@string/spam_string" />
+
+    </group>
+</menu>

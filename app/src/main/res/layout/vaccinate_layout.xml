@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/enter_parent_info_back" android:paddingLeft="@dimen/com_parse_ui_horizontal_margin" android:paddingTop="@dimen/com_parse_ui_vertical_margin" android:paddingRight="@dimen/com_parse_ui_horizontal_margin" android:paddingBottom="@dimen/com_parse_ui_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutLL">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="150" layout="@layout/vaccinate_logo"
+        android:id="@+id/layout50" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <EditText android:id="@+id/cnic_num" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="Enter Parent's CNIC" style="@style/ParseLoginUI.EditText"
+            android:inputType="number" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Button android:id="@+id/cnic_enterbtn" android:layout_width="150dp" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:text="Enter" android:layout_weight="0.5" style="@style/ParseLoginUI.Button" />
+            <Button android:id="@+id/see_nfc" android:layout_width="150dp" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:text="Use RFID" android:layout_weight="0.5" style="@style/ParseLoginUI.Button" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

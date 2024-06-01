@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDE1EB"
+    android:id="@+id/SV"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:foregroundGravity="top"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back"
+        android:gravity="top"
+        android:focusable="true">
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Concert and Party"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+            -->
+        <!--<TextView
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Workshop"
+            android:id="@+id/textView5"
+            android:focusable="true"
+            android:gravity="top|left|right"
+            android:layout_gravity="center_vertical|right"
+            android:focusableInTouchMode="true"
+            style="@style/Base.AlertDialog.AppCompat"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/switch_thumb_material_light"
+            android:drawablePadding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="true"
+            android:textSize="40sp"
+            xmlns:android="http://schemas.android.com/apk/res/android" />-->
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Activity"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:textSize="20dp"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Date"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:textSize="20dp"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt4"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Registrations"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt5"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="12th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt1000"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1600-1800 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt8"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Preparations"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt9"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="12th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt10"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1800-1900 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+
+
+
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt21"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Social Event"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt22"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="12th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt23"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1900-2200 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt24"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Exhibition"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt25"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt26"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0900-1300 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt27"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Evaluation"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt28"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt29"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0900-1300 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt30"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Lunch and Prayers Break"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt31"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt32"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1330-1430 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt33"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Arrivl of Chief Guest"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt34"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt35"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1500 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt36"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Meeting with Commandant"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt37"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt38"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1500 - 1515 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt39"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="College Visit by Chief Guest"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt40"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt41"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1515 - 1530 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt42"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Visit to the Dept of Computer Engineering"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt43"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt44"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1530 - 1600 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt45"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Visit to other Depts"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt46"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt47"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1600 - 1615 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt48"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Chief Guest arrives in Auditorium"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt49"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt50"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1630 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt51"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Concluding Remarks by Chief Organizer"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt52"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt54"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1635 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt55"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Closing address by the Commandant"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt56"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt57"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1640 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt58"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Prize Distribution by the Chief Guest"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt59"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt60"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1650 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt64"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Departure of Chief Guest"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt65"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt66"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1725 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt61"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Closing Remarks by the Chief Guest"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt62"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt63"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1710 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <!-- Column 1 -->
+                <TextView
+                    android:id="@+id/tbl_txt156"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="Departure of Chief Guest"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:id="@+id/tbl_txt157"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="13th Nov 2015"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/background_floating_material_light"
+                    />
+
+                <TextView
+                    android:id="@+id/tbl_txt158"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="1725 hours"
+                    android:textStyle="bold"
+                    android:textColor="@color/background_floating_material_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

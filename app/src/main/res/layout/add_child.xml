@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/add_child_back" android:paddingLeft="@dimen/com_parse_ui_horizontal_margin" android:paddingTop="@dimen/com_parse_ui_vertical_margin" android:paddingRight="@dimen/com_parse_ui_horizontal_margin" android:paddingBottom="@dimen/com_parse_ui_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutLB">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="150" layout="@layout/child_logo" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <EditText android:id="@+id/child_name" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="Enter the Child name" style="@style/ParseLoginUI.EditText" />
+        <EditText android:id="@+id/DOB" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="Enter the Child's DOB,format: yyyy-mm-dd" style="@style/ParseLoginUI.EditText" />
+        <EditText android:id="@+id/FormB" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="Enter the Child's FORM B no." style="@style/ParseLoginUI.EditText" />
+
+        <LinearLayout android:id="@+id/parse_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/com_parse_ui_large_vertical_spacing">
+
+            <Button android:id="@+id/register_child_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Register Child" android:layout_weight="0.5" style="@style/ParseLoginUI.Button" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

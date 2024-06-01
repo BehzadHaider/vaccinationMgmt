@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/vaccine_main" android:paddingLeft="@dimen/com_parse_ui_horizontal_margin" android:paddingTop="@dimen/com_parse_ui_vertical_margin" android:paddingRight="@dimen/com_parse_ui_horizontal_margin" android:paddingBottom="@dimen/com_parse_ui_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:background="@mipmap/ic_launcher7" -->
+
+
+
+    <LinearLayout
+        android:id="@+id/contact_name_liearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        >
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            />
+
+        <TextView
+            android:id="@+id/child_name_tv"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@android:drawable/editbox_background"  android:layout_height="50.0dip" android:hint="Name" style="@style/ParseLoginUI.EditText"
+
+            android:text="Child&apos;s Name" />
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/contact_name_liearlayout"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/contact_number_liearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/view1"
+        >
+
+
+        <TextView
+            android:id="@+id/contact_emailL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child ID"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/view21"
+            android:layout_alignLeft="@+id/contact_email_liearlayout21"
+            android:layout_alignStart="@+id/contact_email_liearlayout21" />
+
+        <TextView
+            android:id="@+id/child_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@android:drawable/editbox_background"  android:hint="Name" style="@style/ParseLoginUI.EditText"
+
+
+            android:text="Child&apos;s ID" />
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/contact_number_liearlayout"
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/contact_email_liearlayout21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/view2"
+        >
+
+
+        <View
+            android:id="@+id/view_contact_email90"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            />
+
+        <TextView
+            android:id="@+id/parents_cnic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@android:drawable/editbox_background"  android:hint="Name" style="@style/ParseLoginUI.EditText"
+
+            android:text="Parent&apos;s CNIC" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/contact_email_liearlayout"
+        />
+    <!---   Text Views Start here            -->
+
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/contact_name_liearlayout"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/contact_number_liearlayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_below="@+id/contact_email_liearlayout21">
+
+        <TextView
+            android:id="@+id/contact_number0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expected Vaccination"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            />
+        <View
+            android:id="@+id/view100"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            />
+
+
+        <TextView
+            android:id="@+id/next_vaccination"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@android:drawable/editbox_background"  android:hint="Name" style="@style/ParseLoginUI.EditText"
+
+            android:text="Name of next vaccination" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/contact_number_liearlayout"
+        />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/contact_email_liearlayout"
+        />
+
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lel">
+        <Button
+            android:id="@+id/gotomain"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Go to Main Menu"
+            android:textColor="#000000"
+            android:layout_weight="1" style="@style/ParseLoginUI.Button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child&apos;s Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/contact_name_liearlayout"
+        android:layout_alignStart="@+id/contact_name_liearlayout" />
+
+    <TextView
+        android:id="@+id/contact_emailL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent's ID Card Number"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/view21"
+        android:layout_alignLeft="@+id/contact_email_liearlayout21"
+        android:layout_alignStart="@+id/contact_email_liearlayout21" />
+
+
+
+</RelativeLayout>

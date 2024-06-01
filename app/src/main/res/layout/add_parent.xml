@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/add_parent_back" android:paddingLeft="@dimen/com_parse_ui_horizontal_margin" android:paddingTop="@dimen/com_parse_ui_vertical_margin" android:paddingRight="@dimen/com_parse_ui_horizontal_margin" android:paddingBottom="@dimen/com_parse_ui_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_parent">
+
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <EditText android:id="@+id/parent_name" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="Name" style="@style/ParseLoginUI.EditText" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#ffdcdcde"
+            android:textSize="30dp"
+            android:id="@+id/tv_s"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/tv_m"
+            android:textColor="#ffdcdcde"
+            android:textSize="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_below="@+id/tv_s"
+            android:layout_marginRight="20dp"/>
+        <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:layout_below="@+id/tv_s"
+                android:checked="false"
+                android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tv_m"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_below="@+id/tv_s"
+            android:id="@+id/tv_f"
+            android:layout_toRightOf="@id/tv_m"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="120dp"
+            android:textColor="#ffdcdcde"
+            android:textSize="20dp"
+            />
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:layout_below="@+id/tv_s"
+                android:checked="false"
+                android:shadowColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_f"
+                />
+
+        </RelativeLayout>
+        <EditText android:id="@+id/parent_CNIC" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing" android:hint="National ID card no. (13 Digits)" android:selectAllOnFocus="true"  style="@style/ParseLoginUI.EditText"
+            android:inputType="number" />
+        <EditText android:id="@+id/parent_phoneNum" android:background="@android:drawable/editbox_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing" android:hint="Contact Number" android:selectAllOnFocus="true"  style="@style/ParseLoginUI.EditText"
+            android:inputType="number" />
+
+        <LinearLayout android:id="@+id/parse_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/com_parse_ui_large_vertical_spacing">
+            <Button android:id="@+id/register_Parent_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Parent" android:layout_weight="0.5" style="@style/ParseLoginUI.Button" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/vaccine_man_back" android:paddingLeft="@dimen/com_parse_ui_horizontal_margin" android:paddingTop="@dimen/com_parse_ui_vertical_margin" android:paddingRight="@dimen/com_parse_ui_horizontal_margin" android:paddingBottom="@dimen/com_parse_ui_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/children_menu" >
+
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.43"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/see_children"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="32dp"
+            style="@style/ButtonText"
+            android:background="@drawable/btn_black"
+            android:text="See Children"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/add_child"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="1000dp"
+            style="@style/ButtonText"
+            android:background="@drawable/btn_black"
+            android:text="Add a child"
+            android:layout_weight="0.15" />
+        </LinearLayout>
+    </LinearLayout>
